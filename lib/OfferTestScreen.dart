@@ -134,42 +134,14 @@ class _OfferTestScreenState extends State<OfferTestScreen> {
       backgroundColor: AppColors.whiteColor,
       elevation: 1.0,
       title: Text(
-        "Latest listings",
+        "Offers",
         style: TextStyle(
             color: Colors.black,
             fontSize: 20,
             fontFamily: AppFonts.nunitoSans,
             fontWeight: FontWeight.w400),
       ),
-      leading: InkWell(
-        onTap: () {
-          Navigator.pop(context);
-        },
-        child: Icon(
-          Icons.close,
-          color: AppColors.color001122,
-        ),
-      ),
-      actions: [
-        InkWell(
-          onTap: () {},
-          child: Container(
-            margin: EdgeInsets.only(right: 16),
-            alignment: Alignment.center,
-            child: Image.asset("assets/images/search.png"),
-          ),
-        ),
-        InkWell(
-          onTap: () {
-            _scaffoldKey.currentState!.openEndDrawer();
-          },
-          child: Container(
-            margin: EdgeInsets.only(right: 16),
-            alignment: Alignment.center,
-            child: Image.asset("assets/images/filter.png"),
-          ),
-        ),
-      ],
+
     );
   }
 
